@@ -1,0 +1,13 @@
+workspace:
+  base: /go/src
+  path: github.com/gboddin/ghcli
+pipeline:
+  get-deps:
+    image: golang
+    commands:
+      - go get github.com/kardianos/govendor
+      - govendor sync
+  build:
+    image: golang
+    commands:
+      - go build

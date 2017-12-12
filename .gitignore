@@ -1,0 +1,4 @@
+.idea
+ghcli
+vendor/*
+!vendor/vendor.json
